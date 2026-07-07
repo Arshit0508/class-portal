@@ -23,7 +23,7 @@ export default function Sidebar() {
       style={{ borderColor: 'var(--line)' }}
     >
       <h2 className="font-display text-lg font-bold mb-1" style={{ color: 'var(--ink)' }}>
-        CSC 2028
+        CSE 2028
       </h2>
       <p className="text-xs mb-8" style={{ color: 'var(--slate)' }}>
         Class Portal

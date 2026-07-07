@@ -72,11 +72,9 @@ export default function PostCard({ post }: { post: Post }) {
 
   return (
     <div
-      className="bg-white rounded-lg p-4 border border-l-4 shadow-sm"
-      style={{
-        borderColor: "var(--line)",
-        borderLeftColor: config.color,
-      }}
+      className="rounded-lg p-4 border-l-4 shadow-sm"
+style={{ borderLeftColor: config.color, borderColor: 'var(--line)', background: 'var(--card-bg)' }}
+      
     >
       <div className="flex justify-between items-start gap-3 mb-1">
         <div className="flex items-center gap-2 flex-wrap">

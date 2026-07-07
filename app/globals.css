@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-:root {
+:root,
+[data-theme="light"] {
   --background: #ffffff;
   --foreground: #171717;
 
@@ -10,6 +11,20 @@
   --signal: #C9482F;
   --notice: #2D6E5E;
   --line: #E4E2DA;
+  --card-bg: #FFFFFF;
+}
+
+[data-theme="dark"] {
+  --background: #14171F;
+  --foreground: #F2F1EC;
+
+  --ink: #F2F1EC;
+  --paper: #14171F;
+  --slate: #9AA1B5;
+  --signal: #E8735A;
+  --notice: #4FAE97;
+  --line: #2A2E3A;
+  --card-bg: #1C2029;
 }
 
 @theme inline {
@@ -28,7 +43,19 @@
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.font-mono-data {
+  font-family: var(--font-mono), monospace;
 }

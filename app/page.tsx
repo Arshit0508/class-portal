@@ -32,9 +32,9 @@ export default async function HomePage() {
           <div key={post.id} className="border rounded-lg p-4">
             <div className="flex justify-between items-start mb-2">
               <h2 className="text-xl font-semibold">{post.title}</h2>
-              <span className="text-xs uppercase bg-red-100 px-2 py-1 rounded">
-                {post.category}
-              </span>
+              <span className="text-xs uppercase bg-red-100 px-2 py-1 rounded text-red-800">
+  {post.category}
+</span>
             </div>
 
             <p className="text-gray-700 whitespace-pre-wrap">{post.body}</p>

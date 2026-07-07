@@ -5,26 +5,26 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --ink: #1C2333;
-  --paper: #FAFAF7;
-  --slate: #5B6478;
-  --signal: #C9482F;
-  --notice: #2D6E5E;
-  --line: #E4E2DA;
-  --card-bg: #FFFFFF;
+  --ink: #1c2333;
+  --paper: #fafaf7;
+  --slate: #5b6478;
+  --signal: #c9482f;
+  --notice: #2d6e5e;
+  --line: #e4e2da;
+  --card-bg: #ffffff;
 }
 
 [data-theme="dark"] {
-  --background: #14171F;
-  --foreground: #F2F1EC;
+  --background: #14171f;
+  --foreground: #f2f1ec;
 
-  --ink: #F2F1EC;
-  --paper: #14171F;
-  --slate: #9AA1B5;
-  --signal: #E8735A;
-  --notice: #4FAE97;
-  --line: #2A2E3A;
-  --card-bg: #1C2029;
+  --ink: #f2f1ec;
+  --paper: #14171f;
+  --slate: #9aa1b5;
+  --signal: #e8735a;
+  --notice: #4fae97;
+  --line: #2a2e3a;
+  --card-bg: #1c2029;
 }
 
 @theme inline {
@@ -37,25 +37,26 @@
   --color-signal: var(--signal);
   --color-notice: var(--notice);
   --color-line: var(--line);
+  --color-card-bg: var(--card-bg);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--paper);
+  background-color: var(--paper);
   color: var(--ink);
-  font-family: var(--font-body), sans-serif;
-  transition: background 0.2s ease, color 0.2s ease;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1,
 h2,
 h3,
 .font-display {
-  font-family: var(--font-display), sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
 }
 
 .font-mono-data {
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-geist-mono), monospace;
 }

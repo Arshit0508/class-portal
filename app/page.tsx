@@ -21,7 +21,7 @@ export default async function HomePage() {
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">CSC 2028 — Class Portal</h1>
+      <h1 className="text-3xl font-bold mb-6">CSE 2028 — Class Portal</h1>
 
       <div className="space-y-4">
         {posts?.length === 0 && (
